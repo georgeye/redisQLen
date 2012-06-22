@@ -1,0 +1,13 @@
+{   "name" : "redisQLen",
+    "version" : "0.0.1",
+    "description" : "node service for querying redis queue length",
+    "author": "George Ye <gye@tigertext.com>",
+    "main": "./queue_length.js",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/georgeye/redisQLen.git"
+    },
+    "dependencies": {
+        "redis": "0.7.2"
+   }
+}
