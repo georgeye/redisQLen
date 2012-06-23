@@ -21,12 +21,12 @@ function handle_query(req, resp) {
   if(urlParsed.pathname == '/queue_length') {
     var qName = urlParsed.query['queue_name'];
     if(qName == "push_apns_pro" || qName == "push_c2dm_pro") {
-      query_queue_length(redis_pro, qName, function(err, len) {
+      query_queue_length(redis_pro, qName + "_queue", function(err, len) {
         cookResponse(resp, err, len);
       });
      }
     else if(qName == "push_apns_cons" || qName == "push_c2dm_cons") {
-      query_queue_length(redis_cons, qName, function(err, len) {
+      query_queue_length(redis_cons, qName + "_queue", function(err, len) {
         cookResponse(resp, err, len);
       });
      }

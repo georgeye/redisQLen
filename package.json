@@ -1,5 +1,5 @@
 {   "name" : "redisQLen",
-    "version" : "0.0.1",
+    "version" : "0.0.2",
     "description" : "node service for querying redis queue length",
     "author": "George Ye <gye@tigertext.com>",
     "main": "./queue_length.js",
